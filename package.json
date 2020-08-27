@@ -1,20 +1,48 @@
 {
-  "name": "ticketMaster-glitch-deployment",
+  "name": "starter-cra-and-react",
   "version": "1.0.0",
-  "description": "This project will include most of the topics we have learnt so far.\r This repository includes a basic skeleton with automated tests, use it for you submissions.\r In this project you will create a Ticket Manager Web Application, with React.js and Express",
-  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-read-more-less": "^0.1.6",
+    "react-scripts": "^3.4.3",
+    "express": "^4.17.1",
+    "concurrently": "^5.3.0",
+    "http-proxy-middleware": "^1.0.5",
+    "@material-ui/core": "^4.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run development",
+    "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "production": "npm run build && NODE_ENV=production npm run server",
+    "server": "node server/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Moran1324/ticketMaster-glitch-deployment.git"
+  "engines": {
+    "node": "10.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Moran1324/ticketMaster-glitch-deployment/issues"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "homepage": "https://github.com/Moran1324/ticketMaster-glitch-deployment#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT"
 }
