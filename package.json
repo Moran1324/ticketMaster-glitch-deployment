@@ -1,0 +1,20 @@
+{
+  "name": "ticketMaster-glitch-deployment",
+  "version": "1.0.0",
+  "description": "This project will include most of the topics we have learnt so far.\r This repository includes a basic skeleton with automated tests, use it for you submissions.\r In this project you will create a Ticket Manager Web Application, with React.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moran1324/ticketMaster-glitch-deployment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moran1324/ticketMaster-glitch-deployment/issues"
+  },
+  "homepage": "https://github.com/Moran1324/ticketMaster-glitch-deployment#readme"
+}
