@@ -1,0 +1,63 @@
+body {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: 'grid';
+    justify-self: 'center' ;
+    justify-content: 'center';
+}
+
+.hideTicket {
+    display: none;
+}
+
+.sortButton {
+    width: fit-content;
+    justify-self: center;
+}
+
+.mainButtons {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.newTicketButton {
+    width: fit-content;
+    justify-self: center;
+}
+
+h4 {
+    display: inline;
+}
+
+#container {
+    width: 70vw;
+    justify-self: 'center' ;
+
+}
+
+.main { 
+    padding-top: 10;
+}
+
+.ticket {
+background-color: rgb(255, 216, 169);
+/* background-image: url('./images/tickert-background.jpg');
+background-size: cover; */
+white-space: pre-line;
+margin: 10px;
+padding: 10px;
+border-radius: 15px;
+border: 1px solid;
+box-shadow: 5px 10px 10px 1px #888585;
+width: 75vw;
+}
+
+.newTicketInput {
+    width: 400px;
+}
+
+#searchInput {
+    width: 30vw;
+}
